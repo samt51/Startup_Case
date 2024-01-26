@@ -1,0 +1,10 @@
+﻿
+
+Proje case istenildiği üzeri toplam 3 projeden oluşmaktadır. En temelde src içerisinde mikroservis vardır. Geleneksel Katmanlı mimariyi kullandım ve CodeFirst yaklaşımını kullandım. Entity katmanında Toplam 5 tane tablom vardır.
+Orm olarak entityFramworkCore kullandım. Sql kullandım ilişkisel veritabanı olarak. Entitilerimin arasında 1-n n-n gibi ilişkiler kurguladım.
+DataAccess katmanında veri tabanımın bağlandığı ve en temelde sorguların yazıldığı yerdir. Burda soyut sınıf ve somut sınıf olarak Dependcy olarak ayırdım. Core Katmanında diğer katmanlarımda ortak kullandığım şeylerin olduğu katmandır.
+Business ise bilindiği giibi iş kuralların olduğu katman ve APİ katmanı ise sunum katmanımdır.
+
+Mikroservice projem ilk önce Startup_Case_Bacend adındaki backend projemle iletişim kuruyor.Bu projede iki katman olup burada ve frontend projemde MediatR ile CQRS pattern kullandım.
+
+Cach olarak memoryCache kullandım. Projem Genel anlatamıyla bunlardır. Teşekkür ederim.
